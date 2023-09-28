@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register Page
+{% endblock %}
+
+{% block content %}
+<body class="text-center">
+    <h1>Register Page</h1>
+    
+    <!-- display form here -->
+    <div class="container"> 
+        <form method="POST" class="form-register" style="color:white">
+            {{ form.hidden_tag() }} <!-- this is a hidden field that is required for CSRF protection -->
+
+            <img class="mb-4" src="https://static.vecteezy.com/system/resources/previews/003/423/831/non_2x/cute-cat-kitten-greeting-cartoon-doodle-background-wallpaper-free-vector.jpg" alt="(⓿_⓿)" style="width: 200px; height: 150px; margin-top: 10px; margin-bottom: 10px; border-radius: 50%; border: 2px solid white; padding: 5px; background-color: white;"/>
+            <h1 class="h3 mb-3 font-weight-normal">
+                Please Create your Account
+            </h1>
+            <br>
+
+            {{ form.username.label() }}
+            {{ form.username(class="form-control", placeholder="username")}}
+            {{ form.email_address.label() }}
+            {{ form.email_address(class="form-control", placeholder="email address") }}
+            {{ form.password1.label() }}
+            {{ form.password1(class="form-control", placeholder="password") }}
+            {{ form.password2.label() }}
+            {{ form.password2(class="form-control", placeholder="confirm password") }}
+            <br>
+            {{ form.submit(class="btn btn-outline-info") }}
+        </form>
+    </div>
+</body>
+{% endblock %}
