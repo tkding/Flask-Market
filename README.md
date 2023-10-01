@@ -2,7 +2,8 @@
 
 An e-commerce website with a built-in authentication system.
 
-[![](https://markdown-videos-api.jorgenkh.no/youtube/)](https://youtu.be/vQS_VokWkII)
+[![YouTube Video Thumbnail](https://img.youtube.com/vi/vQS_VokWkII/0.jpg)](https://youtu.be/vQS_VokWkII)
+
 
 ## Features
 
